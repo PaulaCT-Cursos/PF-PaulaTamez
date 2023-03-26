@@ -35,14 +35,24 @@ $background-color_6: #dc3545;
 	margin-left: 0%;
 	padding-right: 0%;
 	height: 100%;
-	min-height: 350px;
 	width: 100%;
 	img {
 		width: 100%;
 		height: auto;
 	}
 }
-/*Altura minima para banner principal*/
+.banner2 {
+	padding-left: 0%;
+	margin-left: 0%;
+	padding-right: 0%;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
 .banner-min {
 	min-height: 350px;
 }
@@ -71,13 +81,13 @@ $background-color_6: #dc3545;
 		font-size: 30px;
 		transition: transform 330ms ease-in-out;
 		span {
-			font-size: 25px;
+			font-size: 35px;
 		}
 		&:hover {
 			transform: scale(1.2);
 		}
 		p {
-			font-size: 20px;
+			font-size: 22px;
 		}
 	}
 	.material {
@@ -103,16 +113,16 @@ $background-color_6: #dc3545;
 	}
 }
 .asesoria {
-	background-color: $fondoGris;
+	background-color: $background-color_2;
 	height: 150px;
 	width: 100%;
 	button {
-		background-color: $fondoRojo;
+		background-color: $background-color_3;
 		color: $color_3;
 	}
 }
 .btn-cotizar-menu {
-	background-color: $fondoRojo !important;
+	background-color: $background-color_3 !important;
 	color: $color_4;
 	border: none;
 	padding: 4px 30px;
@@ -130,10 +140,9 @@ $background-color_6: #dc3545;
 	height: 30px;
 }
 footer {
-	height: 120px;
 	div {
 		a {
-			color: $colorRojo2;
+			color: $color_2;
 		}
 	}
 }
@@ -147,7 +156,7 @@ footer {
 	.icono {
 		margin: 10px;
 		button {
-			background-color: $fondoRojo !important;
+			background-color: $background-color_3 !important;
 			color: $color_4;
 			border: none;
 			padding: 4px 30px;
@@ -158,14 +167,14 @@ footer {
 	}
 }
 .fondo-negro {
-	background-color: $fondoNegro !important;
+	background-color: $background-color_4 !important;
 }
 .w70 {
 	width: 70%;
 }
 .link {
 	&:hover {
-		color: $colorGris !important;
+		color: $color_5 !important;
 	}
 }
 .font15px {
@@ -174,13 +183,21 @@ footer {
 .font20px {
 	font-size: 20px !important;
 }
+.logo {
+	width: 227px;
+	height: auto;
+}
+#map {
+	height: 389px;
+	background-color: $background-color_5;
+}
 @media (max-width: 992px) {
 	.espacioV {
 		padding-top: 0;
 	}
 	.iconos {
 		.icono {
-			background-color: $background-color_5;
+			background-color: $background-color_6;
 			width: 100%;
 		}
 	}
@@ -191,7 +208,7 @@ footer {
 		}
 	}
 	.videoDiv {
-		background-color: $background-color_6;
+		background-color: $background-color_7;
 	}
 	.banner {
 		min-height: 250px;
@@ -204,5 +221,13 @@ footer {
 	}
 	.w70 {
 		width: 100%;
+	}
+	.asesoria {
+		height: 40px;
+		padding: 35px;
+	}
+	.espacio-contacto {
+		padding-top: 40px;
+		padding-bottom: 15px;
 	}
 }
