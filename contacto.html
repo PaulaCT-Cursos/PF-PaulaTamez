@@ -15,6 +15,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/estilo.css">
+    
+
 </head>
 
 
@@ -45,10 +47,10 @@
                             <a class="nav-link mimenu"  href="servicios.html">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active mimenu" aria-current="page" href="materiales.html">Materiales</a>
+                            <a class="nav-link mimenu" href="materiales.html">Materiales</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mimenu" href="contacto.html">Contacto</a>
+                            <a class="nav-link active mimenu" aria-current="page" href="contacto.html">Contacto</a>
                         </li>
                     </ul>
                     <div>
@@ -61,74 +63,51 @@
         <div class="row g-0">
             <div class="col-lg-3 col-m-12">
                 <div class="ps-5 d-flex flex-column justify-content-center text-bg-danger banner">
-                    <h1>Materiales de gama alta</h1>
-                    <p class="pe-2 font20px">-Cerámicos<br>-Cuarzo <br>-Granito</p>
+                    <h1>Contáctanos</h1>
+                    <p class="pe-2 font20px">-Asesoría<br>-Dudas <br>-Capacitación</p>
                 </div>
             </div>
 
             <div class="col-lg-9 col-12">
                 <div class="banner2">
-                    <img src="imagen/banner3.jpg" alt="banner">
+                    <div id="map"></div>
                 </div>
             </div>      
         </div>
-        <div class="row g-0 espacioV">
-            <div class="col-12 d-flex justify-content-center">
-                <div class="d-flex justify-content-center flex-column w70">
-                    <h2 class="text-center pt-5 pb-5 mb-0">Materiales</h2>
-                    <p class="text-center ms-lg-5 me-lg-5 ms-md-5 me-md-5 ms-2 me-2 font20px">Fusionamos las técnicas tradicionales, los procesos de manufactura más innovadores y un estilo de diseño equilibrado que dan como resultado un espacio único.</p>
-                </div>
-            </div>
-          
-            <div class="col-12 pt-5 pb-5 d-flex justify-content-center">
-                <h3>Materiales Ceramicos</h3>
-            </div>
-            
-            <div class="col-lg-6 col-12">
-                <div class="iconos">
-                    <div class="material" data-aos="flip-left">
-                        <img src="imagen/Cuarzo.jpeg" alt="Cuarzo">
+
+        <div class="row g-0 text-center espacioV">
+            <div class="col-lg-6 col-12 cocinas d-flex" data-aos="flip-left">
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="d-flex justify-content-center flex-column w70">
+                        <h2 class="text-center espacio-contacto mb-0">Creamos la cocina de tus sueños juntos</h2>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-12">
-                <div class="iconos">
-                    <div class="material" data-aos="flip-right">
-                        <img src="imagen/Granito.jpeg" alt="Granito">
-                    </div>
+            <div class="col-lg-6 col-12 cocinas" data-aos="flip-left">
+                <div>
+                    <form class="text-start">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="recipient-name" placeholder="Nombre">
+                          </div>
+                        <div class="mb-3">
+                          <input type="text" class="form-control" id="recipient-email" placeholder="E-mail">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="recipient-tel" placeholder="Teléfono">
+                          </div>
+                        <div class="mb-3">
+                          <textarea rows="5" class="form-control" id="message-text" placeholder="Mensaje"></textarea>
+                        </div>
+                        <div class="mb-3 text-center">
+                            <button type="button" class="btn btn-primary w-100" style="background-color: #DA0037;">Enviar</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
 
-        <div class="row g-0 text-center espacioV">
-            <div class="col-12 pt-5 pb-5 d-flex justify-content-center">
-                <h3>Materiales Texturizados</h3>
-            </div>
-            <div class="col-lg-4 col-12 materiales" data-aos="fade-right">
-                <img src="imagen/TEXTURA1.jpeg" alt="Textura">
-            </div>
-            <div class="col-lg-4 col-12 materiales" data-aos="fade-up">
-                <img src="imagen/TEXTURA2.jpeg" alt="Textura">
-            </div>
-            <div class="col-lg-4 col-12 materiales" data-aos="fade-down">
-                <img src="imagen/TEXTURA3.jpeg" alt="Textura">
-            </div>
-        </div>
-        <div class="row g-0 espacioV">
-            <div class="col-lg-6 col-12">
-                <div class="asesoria d-flex justify-content-center align-items-center">
-                    <h4 class="text-white text-center ps-3 pe-3">Asesoria para su proyecto</h4>
-                </div> 
-            </div>
-            <div class="col-lg-6 col-12">
-                <div class="asesoria d-flex justify-content-center align-items-center">
-                    <div class="input-group ps-3 pe-3 in-contactar">
-                        <input type="text" class="form-control" placeholder="@email" aria-label="Contactame" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-secondary" type="button" id="btn-contacta">Contáctame</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+
         <footer class="container-fluid">
             <div class="row align-items-center pt-2 pb-2">
                 <div class="col-12 col-md-6">
@@ -187,9 +166,18 @@
             crossorigin="anonymous">
         </script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap" async defer></script>
         <script>
             AOS.init();
-        </script>
+            function initMap() {
+              var mapOptions = {
+                center: new google.maps.LatLng(25.6866,-100.3161), // Coordenadas de la ubicación que deseas mostrar en el mapa
+                zoom: 13 // Nivel de zoom inicial
+              };
+              var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+            }
+            </script>
+            
     </div>
 </body>
 

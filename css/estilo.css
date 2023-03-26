@@ -81,13 +81,13 @@ body {
   transition: transform 330ms ease-in-out;
 }
 .iconos .icono span {
-  font-size: 25px;
+  font-size: 35px;
 }
 .iconos .icono:hover {
   transform: scale(1.2);
 }
 .iconos .icono p {
-  font-size: 20px;
+  font-size: 22px;
 }
 .iconos .material {
   width: 100%;
@@ -195,6 +195,11 @@ footer div a {
   height: auto;
 }
 
+#map{
+  height: 389px;
+  background-color: red;
+}
+
 @media (max-width: 992px) {
   .espacioV {
     padding-top: 0;
@@ -225,6 +230,10 @@ footer div a {
   .asesoria {
     height: 40px;
     padding: 35px;
+  }
+  .espacio-contacto{
+    padding-top: 40px;
+    padding-bottom: 15px;
   }
 }
 
