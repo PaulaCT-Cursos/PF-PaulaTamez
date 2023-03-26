@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Cotiza tu Cocina con Nosotros, Diseños Creativos, Minimalista, Contemporáneo, Cubiertas de Cuarzo y mármol.">
     <title>Romainco | Servicios</title>
+    <link  rel="icon" href="imagen/favicon.jpg" type="image/jpeg"/>
     <!-- BST -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -19,11 +20,11 @@
 
 <body>
    <!-- Navegador -->
-    <div>
+    <div class="container-fluid p-0">
         <!-- Menu de navegación-->
         <nav class="navbar navbar-expand-lg rounded colorfondo" aria-label="Eleventh navbar example">
             <div class="container-fluid colorfondo">
-                <a class="navbar-brand" href="Romainco">
+                <a class="navbar-brand" href="index.html">
                     <img src="imagen/logo.png" alt="Romainco">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -63,7 +64,7 @@
         </div>
 
         <div class="col-lg-9 col-12">
-            <div class="banner">
+            <div class="banner2">
                 <img src="imagen/animado.gif" alt="banner">
             </div>
         </div>
@@ -71,7 +72,7 @@
     </div>
     <div class="row g-0 espacioV">
         <div class="col-12">
-            <p class="text-center pt-5 pb-5 fs-5 fw-bold">En 3 sencillos pasos podrás cotizar la cocina de tus sueños.</p>
+            <p class="text-center pt-5 pb-5 fs-5 fw-bold mb-0">En 3 sencillos pasos podrás cotizar la cocina de tus sueños.</p>
         </div>
 
         <div class="col-lg-4 col-12">
@@ -83,7 +84,7 @@
                         <div class="card-body">
                           <h5 class="card-title">Concepto + Moodoard</h5>
                           <p class="card-text font15px">Realizamos una visita al lugar, realizarmos el levantamiento de medidas y toma de fotografías.</p>
-                          <a href="#" class="btn btn-primary">Solicitar</a>
+                          <button type="button" class="btn btn-cotizar-menu">Solicitar</button>
                         </div>
                     </div>
                 </div>
@@ -97,7 +98,7 @@
                         <div class="card-body">
                           <h5 class="card-title">Propuesta y detalle</h5>
                           <p class="card-text font15px">Mandamos el diseño de la propueta inicial, hacemos elección de material y definimos presupuesto.</p>
-                          <a href="#" class="btn btn-primary">Solicitar</a>
+                          <button type="button" class="btn btn-cotizar-menu">Solicitar</button>
                         </div>
                     </div>
                 </div>
@@ -111,7 +112,7 @@
                         <div class="card-body">
                           <h5 class="card-title">Solución</h5>
                           <p class="card-text font15px">Comenzamos la construcción y entregamos proyecto en tiempos acordados.</p>
-                          <a href="#" class="btn btn-primary">Solicitar</a>
+                          <button type="button" class="btn btn-cotizar-menu">Solicitar</button>
                         </div>
                     </div>
                 </div>
@@ -169,6 +170,14 @@
                 <div class="mb-3">
                     <label for="recipient-name" class="col-form-label">E-mail:</label>
                     <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="mb-3">
+                    <label for="work-name" class="col-form-label">Selecciona el tipo de trabajo que más se adapte:</label>
+                    <select class="form-control" id="work-name">
+                        <option>Remodelar Cocina</option>
+                        <option>Amueblar Cocina</option>
+                        <option>Remodelación Parcial Cocina</option>
+                      </select>
                 </div>
                 <div class="mb-3">
                     <label for="message-text" class="col-form-label">Comentarios:</label>

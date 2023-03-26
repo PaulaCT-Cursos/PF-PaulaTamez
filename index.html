@@ -7,24 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Cotiza tu Cocina con Nosotros, Diseños Creativos, Minimalista, Contemporáneo, Cubiertas de Cuarzo y mármol.">
     <title>Romainco | Kitchen & Design</title>
+    <link  rel="icon" href="imagen/favicon.jpg" type="image/jpeg"/>
     <!-- BST -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- CSS -->
+    <!--
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    -->
     <link rel="stylesheet" href="css/estilo.css">
+    
 </head>
 
 
 <body>
    <!-- Navegador -->
-    <div>
+    <div class="container-fluid p-0">
         <!-- Menu de navegación-->
         <nav class="navbar navbar-expand-lg rounded colorfondo" aria-label="Eleventh navbar example">
             <div class="container-fluid colorfondo">
-                <a class="navbar-brand" href="Romainco">
+                <a class="navbar-brand" href="index.html">
                     <img src="imagen/logo.png" alt="Romainco">
                 </a>
                 
@@ -65,7 +69,7 @@
             </div>
         </div>
         <div class="col-lg-6 col-m-12">
-            <div class="pt-5 ps-5 text-bg-danger banner banner-min">
+            <div class="pt-5 ps-5 pb-5 text-bg-danger banner banner-min">
                 <H1>Minimalista, <br> contemporánea, <br> clásica.</H1>
                 <p class="pe-2">Haciendo la diferencia que puedes ver y sentir, hacemos fácil tu proyecto.</p>
                 <button class="btn btn-outline-light animate__animated animate__pulse" data-aos="fade-left" type="button">Más Información</button>
@@ -75,8 +79,8 @@
     <div class="row g-0 espacioV">
         <div class="col-12 d-flex justify-content-center">
             <div class="d-flex justify-content-center flex-column w70">
-                <h2 class="text-center pt-5 pb-5">Nuestro proceso de fabricación</h2>
-                <p class="text-center ms-5 me-5">Diseñamos y planificamos tu cocina. Te brindamos la mejor asesoría técnica. Hacemos cocinas personalizables a tus necesidad,serán cocinas modulares integrales que inspiran tu vida, diseñadas para brindar la atmósfera correcta.</p>
+                <h2 class="text-center pt-5 pb-5 mb-0">Nuestro proceso de fabricación</h2>
+                <p class="text-center ms-5 me-5 pb-5">Diseñamos y planificamos tu cocina. Te brindamos la mejor asesoría técnica. Hacemos cocinas personalizables a tus necesidad,serán cocinas modulares integrales que inspiran tu vida, diseñadas para brindar la atmósfera correcta.</p>
             
             </div>
        </div>
@@ -168,6 +172,14 @@
                 <div class="mb-3">
                     <label for="recipient-name" class="col-form-label">E-mail:</label>
                     <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="mb-3">
+                    <label for="work-name" class="col-form-label">Selecciona el tipo de trabajo que más se adapte:</label>
+                    <select class="form-control" id="work-name">
+                        <option>Remodelar Cocina</option>
+                        <option>Amueblar Cocina</option>
+                        <option>Remodelación Parcial Cocina</option>
+                      </select>
                 </div>
                 <div class="mb-3">
                     <label for="message-text" class="col-form-label">Comentarios:</label>
